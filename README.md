@@ -27,6 +27,14 @@ The project is built with the following environment:
 - PyTorch 1.8.0  
 - CUDA 11.1  
 
+## Training and Evaluation
+
+Training
+python main.py --mode train --data_dir your_path
+
+Test
+python main.py --mode test --data_dir your_path --test_model path_to_model
+
 ### Install dependencies
 
 ```bash
@@ -35,13 +43,8 @@ cd pytorch-gradual-warmup-lr/
 python setup.py install
 cd ..
 
-## Training and Evaluation
 
-Training
-python main.py --mode train --data_dir your_path
 
-Test
-python main.py --mode test --data_dir your_path --test_model path_to_model
 
 
 
