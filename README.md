@@ -25,7 +25,12 @@ The project is built with the following environment:
 
 - Python 3.8  
 - PyTorch 1.8.0  
-- CUDA 11.1  
+- CUDA 11.1
+
+pip install tensorboard einops scikit-image pytorch_msssim opencv-python
+cd pytorch-gradual-warmup-lr/
+python setup.py install
+cd ..
 
 ## Training and Evaluation
 
@@ -35,13 +40,7 @@ python main.py --mode train --data_dir your_path
 Test
 python main.py --mode test --data_dir your_path --test_model path_to_model
 
-### Install dependencies
 
-```bash
-pip install tensorboard einops scikit-image pytorch_msssim opencv-python
-cd pytorch-gradual-warmup-lr/
-python setup.py install
-cd ..
 
 
 
